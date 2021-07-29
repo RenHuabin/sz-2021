@@ -3,6 +3,7 @@ import VueRouter from "vue-router"
 import movie from './movie'
 import mine from './mine'
 import cinema from './cinema'
+import city from './city'
 
 Vue.use(VueRouter)
 
@@ -17,11 +18,12 @@ const router = new VueRouter({
   routes:[
     {
       path:'/',
-      redirect:'/movie'
+      redirect:'/movie/movieNow'
     },
     movie,
     mine,
-    cinema
+    cinema,
+    city
   ]
 })
 

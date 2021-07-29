@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <TabBar/>
+    <TabBar v-if="$route.meta.TabBarFlag"/>
   </div>
 </template>
 
@@ -17,5 +17,11 @@ export default {
 </script>
 
 <style>
-
+router-view{
+  
+            flex: 1;
+            border: 1px solid red;
+            overflow: auto;
+      
+}
 </style>

@@ -4,10 +4,16 @@ module.exports = {
     devServer:{
         //跨域配置
         proxy:{
-            "/api":{
-                target:'http://39.97.33.178',
+            "/apollo":{
+                target:'https://i.maoyan.com',
+                 secure: false,
                 changeOrigin:true
-            }
+            },
+            "/ajax":{
+            target:'https://m.maoyan.com',
+            secure: false,
+            changeOrigin:true
+            },
         }
     },
     configureWebpack:{  //覆盖 webpack 的配置项

@@ -1,5 +1,8 @@
 export default {
     path:'/mine',
     name:'mine',
-    component:()=>import('@views/mine/Mine.vue')
+    component:()=>import('@views/mine/Mine.vue'),
+    meta:{
+        TabBarFlag:false
+    }
 }
